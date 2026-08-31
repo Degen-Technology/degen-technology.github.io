@@ -1,39 +1,108 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Degen Technology — iPhone apps</title>
-<meta name="description" content="Small, focused iPhone apps from Degen Technology. Free to download.">
-<meta name="theme-color" content="#0b1524">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Small iOS apps — Degen Technology</title>
+<meta name="description" content="Five iPhone apps, each built to do a single job properly. Free on the App Store.">
+<meta name="theme-color" content="#0B1524">
 <link rel="canonical" href="https://degen-technology.github.io/">
-<meta property="og:title" content="Degen Technology — iPhone apps">
-<meta property="og:description" content="Small, focused iPhone apps. Free to download.">
+<link rel="icon" href="mealite/img/icon.png">
+<meta property="og:title" content="Small iOS apps">
+<meta property="og:description" content="Five iPhone apps, each built to do a single job properly. Free on the App Store.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://degen-technology.github.io/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://degen-technology.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="App icons for five iPhone apps">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Small iOS apps">
+<meta name="twitter:description" content="Five iPhone apps, each built to do a single job properly. Free on the App Store.">
+<meta name="twitter:image" content="https://degen-technology.github.io/og.jpg">
 <style>
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#0b1524;background:linear-gradient(180deg,#f6f9fc,#fff);line-height:1.6}
-.wrap{max-width:720px;margin:0 auto;padding:70px 22px}h1{font-size:2.1rem;letter-spacing:-.02em;margin:0 0 .3em}
-.sub,.count{color:#5b6573}.count{font-size:.9rem;margin:0 0 32px}
-.app{display:flex;align-items:center;gap:16px;border:1px solid #e7ebf0;border-radius:18px;padding:18px 20px;margin-bottom:14px;background:#fff;transition:border-color .15s,transform .15s}
-.app:hover{border-color:#cfd8e3;transform:translateY(-1px)}
-.app img{width:54px;height:54px;border-radius:13px;flex:none}.app .t{flex:1;min-width:0}.app .t b{display:block;font-size:1.1rem}
-.app .t span{color:#5b6573;font-size:.93rem;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.app .go{color:#1c82f6;font-weight:600;flex:none}
-a{text-decoration:none;color:inherit}.legal a{color:#1c82f6;margin-right:18px}footer{color:#8a94a3;margin-top:34px;font-size:.85rem}
-@media(max-width:520px){.app .go{display:none}}
-</style></head><body><div class="wrap">
-<h1>Degen Technology</h1>
-<p class="sub">Small, focused iPhone apps. Each one does a single job properly.</p>
-<p class="count">5 apps on the App Store</p>
-  <a class="app" href="mealite/"><img src="mealite/img/icon.png" alt="Mealite"><div class="t"><b>Mealite</b><span>Meal Randomizer — One tap picks tonight's meal from food you actually eat. Or tell it what's in your fridge and it…</span></div><span class="go">View →</span></a>
-  <a class="app" href="lockin/"><img src="lockin/img/icon.png" alt="Lock In"><div class="t"><b>Lock In</b><span>Focus &amp; Accountability — Commit to exactly five things each morning. Whatever you don't finish is waiting for you tomorro…</span></div><span class="go">View →</span></a>
-  <a class="app" href="wren/"><img src="wren/img/icon.png" alt="Wren"><div class="t"><b>Wren</b><span>PCOS Cycle &amp; Symptoms — Most trackers assume a 28-day wheel and hand you a fake date. Wren gives you an honest window, a…</span></div><span class="go">View →</span></a>
-  <a class="app" href="citadel-champions/"><img src="citadel-champions/img/icon.png" alt="Citadel Champions"><div class="t"><b>Citadel Champions</b><span>Offline Tower Defense RPG — A tower defense RPG that works on the subway, on a plane, anywhere. Place heroes, upgrade gear, …</span></div><span class="go">View →</span></a>
-  <a class="app" href="contraction-timer/"><img src="contraction-timer/img/icon.png" alt="Labor &amp; Contraction Timer"><div class="t"><b>Labor &amp; Contraction Timer</b><span>Contraction Timer — One big button to start and stop. Clear timings you can read out loud to your midwife or doctor …</span></div><span class="go">View →</span></a>
-<div class="legal" style="margin-top:40px">
-<a href="https://www.degentechnology.com/privacy-policy">Privacy Policy</a>
-<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
-<a href="mailto:alan@degentechnology.com">Contact</a>
+*{box-sizing:border-box}
+:root{--ink:#0b1524;--muted:#5b6573;--line:#e7ebf0;--blue:#1c82f6}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:600px;margin:0 auto;padding:44px 20px calc(40px + env(safe-area-inset-bottom))}
+header{margin-bottom:30px}
+h1{font-size:1.85rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 .35em;font-weight:800}
+.sub{color:var(--muted);margin:0;font-size:1.02rem}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.chip{font-size:.8rem;font-weight:600;color:#28303b;background:#f2f5f9;border:1px solid var(--line);
+border-radius:999px;padding:5px 11px}
+ul{list-style:none;padding:0;margin:0}
+.app{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:16px;
+padding:12px 12px 12px 14px;margin-bottom:11px;background:#fff}
+.face{display:flex;align-items:center;gap:13px;flex:1;min-width:0}
+.face img{width:60px;height:60px;border-radius:14px;flex:none}
+.txt{min-width:0;display:block}
+.txt b{display:block;font-size:1.05rem;line-height:1.25}
+.txt i{display:block;font-style:normal;font-size:.78rem;font-weight:600;color:var(--blue);
+text-transform:uppercase;letter-spacing:.03em;margin:1px 0 3px}
+.txt span{display:block;color:var(--muted);font-size:.9rem;line-height:1.35}
+/* 44px minimum touch target — this page is mostly read on a phone */
+.get{flex:none;display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:#fff;
+font-weight:600;font-size:.9rem;padding:11px 15px;border-radius:999px;min-height:44px}
+.get svg{width:14px;height:14px;fill:#fff}
+footer{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);color:#8a94a3;font-size:.85rem}
+footer a{color:var(--blue)}.flinks{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+@media(hover:hover){.app:hover{border-color:#cfd8e3}.get:hover{background:#1d2938}}
+@media(prefers-color-scheme:dark){
+  :root{--ink:#f2f6fb;--muted:#98a4b4;--line:#22303f}
+  body{background:#0b1524}.app{background:#111c2b}.chip{background:#16233442;color:#c3cedd}
+  .get{background:#f2f6fb;color:#0b1524}.get svg{fill:#0b1524}
+}
+@media(max-width:400px){.txt span{display:none}.get span{display:none}.get{padding:12px}}
+</style></head><body>
+<div class="wrap">
+<header>
+  <h1>Small iOS apps.</h1>
+  <p class="sub">I build and ship them one at a time. Each does a single job properly — no bloat, no upsell maze.</p>
+  <div class="meta"><span class="chip">5 on the App Store</span><span class="chip">iPhone &amp; iPad</span><span class="chip">Free to download</span></div>
+</header>
+<ul>
+    <li class="app">
+      <a class="face" href="mealite/">
+        <img src="mealite/img/icon.png" alt="" width="60" height="60" loading="lazy">
+        <span class="txt"><b>Mealite</b><i>Meal Randomizer</i><span>Decides what's for dinner in one tap — from food you actually eat.</span></span>
+      </a>
+      <a class="get" href="https://apps.apple.com/us/app/mealite-meal-randomizer/id6758004518?uo=4" aria-label="Get Mealite: Meal Randomizer on the App Store"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318 268c-1-58 47-86 49-87-27-39-68-44-83-45-35-4-69 21-87 21s-45-20-74-20c-38 1-73 22-93 56-40 69-10 171 28 227 19 27 41 58 71 57 29-1 40-19 74-19s44 19 74 18c31 0 50-28 68-55 22-31 31-61 31-63-1-1-60-23-61-90z"/><path d="M262 84c16-19 27-46 24-73-23 1-51 16-67 35-15 17-28 44-25 70 26 2 52-13 68-32z"/></svg><span>Get</span></a>
+    </li>
+    <li class="app">
+      <a class="face" href="lockin/">
+        <img src="lockin/img/icon.png" alt="" width="60" height="60" loading="lazy">
+        <span class="txt"><b>Lock In</b><i>Focus &amp; Accountability</i><span>Commit to five tasks a day. Blocks the apps that steal them.</span></span>
+      </a>
+      <a class="get" href="https://apps.apple.com/us/app/lock-in-focus-accountability/id6758227831?uo=4" aria-label="Get Lock In: Focus, Accountability on the App Store"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318 268c-1-58 47-86 49-87-27-39-68-44-83-45-35-4-69 21-87 21s-45-20-74-20c-38 1-73 22-93 56-40 69-10 171 28 227 19 27 41 58 71 57 29-1 40-19 74-19s44 19 74 18c31 0 50-28 68-55 22-31 31-61 31-63-1-1-60-23-61-90z"/><path d="M262 84c16-19 27-46 24-73-23 1-51 16-67 35-15 17-28 44-25 70 26 2 52-13 68-32z"/></svg><span>Get</span></a>
+    </li>
+    <li class="app">
+      <a class="face" href="citadel-champions/">
+        <img src="citadel-champions/img/icon.png" alt="" width="60" height="60" loading="lazy">
+        <span class="txt"><b>Citadel Champions</b><i>Offline Tower Defense</i><span>A tower-defense RPG that runs with no internet at all.</span></span>
+      </a>
+      <a class="get" href="https://apps.apple.com/us/app/citadel-champions/id6747912766?uo=4" aria-label="Get Citadel Champions on the App Store"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318 268c-1-58 47-86 49-87-27-39-68-44-83-45-35-4-69 21-87 21s-45-20-74-20c-38 1-73 22-93 56-40 69-10 171 28 227 19 27 41 58 71 57 29-1 40-19 74-19s44 19 74 18c31 0 50-28 68-55 22-31 31-61 31-63-1-1-60-23-61-90z"/><path d="M262 84c16-19 27-46 24-73-23 1-51 16-67 35-15 17-28 44-25 70 26 2 52-13 68-32z"/></svg><span>Get</span></a>
+    </li>
+    <li class="app">
+      <a class="face" href="wren/">
+        <img src="wren/img/icon.png" alt="" width="60" height="60" loading="lazy">
+        <span class="txt"><b>Wren</b><i>PCOS Cycle Tracking</i><span>Built for irregular cycles — honest ranges, not a fake date.</span></span>
+      </a>
+      <a class="get" href="https://apps.apple.com/us/app/wren-pcos-cycle-symptoms/id6796396909?uo=4" aria-label="Get Wren: PCOS Cycle &amp; Symptoms on the App Store"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318 268c-1-58 47-86 49-87-27-39-68-44-83-45-35-4-69 21-87 21s-45-20-74-20c-38 1-73 22-93 56-40 69-10 171 28 227 19 27 41 58 71 57 29-1 40-19 74-19s44 19 74 18c31 0 50-28 68-55 22-31 31-61 31-63-1-1-60-23-61-90z"/><path d="M262 84c16-19 27-46 24-73-23 1-51 16-67 35-15 17-28 44-25 70 26 2 52-13 68-32z"/></svg><span>Get</span></a>
+    </li>
+    <li class="app">
+      <a class="face" href="contraction-timer/">
+        <img src="contraction-timer/img/icon.png" alt="" width="60" height="60" loading="lazy">
+        <span class="txt"><b>Labor &amp; Contraction Timer</b><i>Contraction Timer</i><span>One button to time contractions during labour.</span></span>
+      </a>
+      <a class="get" href="https://apps.apple.com/us/app/labor-contraction-timer/id6758149072?uo=4" aria-label="Get Labor &amp; Contraction Timer on the App Store"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318 268c-1-58 47-86 49-87-27-39-68-44-83-45-35-4-69 21-87 21s-45-20-74-20c-38 1-73 22-93 56-40 69-10 171 28 227 19 27 41 58 71 57 29-1 40-19 74-19s44 19 74 18c31 0 50-28 68-55 22-31 31-61 31-63-1-1-60-23-61-90z"/><path d="M262 84c16-19 27-46 24-73-23 1-51 16-67 35-15 17-28 44-25 70 26 2 52-13 68-32z"/></svg><span>Get</span></a>
+    </li>
+</ul>
+<footer>
+  <div class="flinks">
+    <a href="https://www.degentechnology.com/privacy-policy">Privacy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a><a href="mailto:alan@degentechnology.com">Contact</a>
+  </div>
+  © 2026 Degen Technology
+</footer>
 </div>
-<footer>© 2026 Degen Technology</footer>
-</div></body></html>
+</body></html>
