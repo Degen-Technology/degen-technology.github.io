@@ -64,4 +64,10 @@ Alternative (92 chars) — same intent, reclaims the wasted space for terms tied
 actual differentiator (Focus Mode blocks apps; competitors there are Freedom/Opal):
 `task manager,habit tracker,daily goals,planner,streak,mode,app blocker,screen time,checklist`
 
-**Decision needed from Alan/Irene** before the next Lock In submission.
+**DECIDED 2026-09-14 — apply option A, Irene's string exactly as sent:**
+
+```
+5 tasks,task manager,habit tracker,daily goals,planner,streak,focus mode,time management,checklist
+```
+
+(98 chars. The duplication note above is kept for the record, not as a blocker — Alan's call.)
