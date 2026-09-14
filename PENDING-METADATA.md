@@ -92,6 +92,12 @@ Verified her claims — they hold up:
 ⚠️ **One duplicate:** `planner` is already in the **subtitle** ("What to Eat & Weekly Planner"),
 so it's indexed and re-adding it spends ~8 of 100 chars for no ranking gain.
 
-Suggested swap if wanted: replace `planner` with **`fridge`** — Fridge Match shipped in 1.9, it's
-a real differentiator ("what can I make with what's in my fridge"), and it is indexed nowhere:
-`food,picker,breakfast,dinner,recipes,spinner,wheel,cooking,decision,roulette,streak,fridge,decider`
+**DECIDED 2026-09-14 — apply with `planner` swapped for `fridge`** (Alan's call). `planner` is
+already indexed via the subtitle; `fridge` covers Fridge Match, which shipped in 1.9 and is
+indexed nowhere. Everything else is Irene's string unchanged:
+
+```
+food,picker,breakfast,dinner,recipes,spinner,wheel,cooking,decision,roulette,streak,fridge,decider
+```
+
+(98 chars. Tell Irene the swap + why, so her next ranking check accounts for it.)
