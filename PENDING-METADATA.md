@@ -71,3 +71,27 @@ actual differentiator (Focus Mode blocks apps; competitors there are Freedom/Opa
 ```
 
 (98 chars. The duplication note above is kept for the record, not as a blocker — Alan's call.)
+
+## Mealite — Keywords (Irene, 2026-09-14)
+
+Same lock: `409 "Attribute 'keywords' cannot be edited at this time"` (1.9 is READY_FOR_SALE).
+Rides with Mealite's next version, alongside its marketingUrl above.
+
+Current (99 chars):
+`food,picker,ideas,foodie,lunch,breakfast,dinner,recipes,spinner,wheel,menu,choices,cooking,decision`
+
+Irene's requested string (99 chars):
+`food,picker,breakfast,dinner,recipes,spinner,wheel,cooking,decision,roulette,streak,planner,decider`
+
+Verified her claims — they hold up:
+- `roulette` genuinely not indexed (name `Mealite: Meal Randomizer`, subtitle `What to Eat & Weekly Planner`) ✅
+- `decider` vs `decision` — different words, Apple won't auto-match; competitors (Food Decider,
+  Dinner Decider, Dining Decider) do use it ✅
+- `streak` and `planner` are real shipped features (stats/index reference streaks; `app/planner.tsx`) ✅
+
+⚠️ **One duplicate:** `planner` is already in the **subtitle** ("What to Eat & Weekly Planner"),
+so it's indexed and re-adding it spends ~8 of 100 chars for no ranking gain.
+
+Suggested swap if wanted: replace `planner` with **`fridge`** — Fridge Match shipped in 1.9, it's
+a real differentiator ("what can I make with what's in my fridge"), and it is indexed nowhere:
+`food,picker,breakfast,dinner,recipes,spinner,wheel,cooking,decision,roulette,streak,fridge,decider`
